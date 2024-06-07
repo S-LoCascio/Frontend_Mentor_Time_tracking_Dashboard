@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hide {
+  display: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+//colors //
+$idBlue: hsl(246, 80%, 60%);
+$workRed: hsl(15, 100%, 70%);
+$playBlue: hsl(195, 74%, 62%);
+$studyRed: hsl(348, 100%, 68%);
+$exerciseGreen: hsl(145, 58%, 55%);
+$socialViolet: hsl(264, 64%, 52%);
+$selfCareOrange: hsl(43, 84%, 65%);
+$backgroundBlue: hsl(226, 43%, 10%);
+$cardBlue: hsl(235, 46%, 20%);
+$textBlue: hsl(235, 45%, 61%);
+$highlightedBlue: hsl(236, 100%, 87%);
+
+//body and general markers//
+
+body {
+  background-color: $backgroundBlue;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Grid section */
+
+.card-grid {
+  margin-top: 10%;
+  margin-bottom: 50%;
+  height: 500px;
+  width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 235px);
+  gap: 30px;
+
+  .user-card {
+    grid-row: 1/3;
+    background-color: $cardBlue;
+    border-radius: 5%;
+
+    .user-card-plate {
+      background-color: $idBlue;
+      padding: 15%;
+      border-radius: 5% 5% 5% 5%;
+      min-height: 320px;
+
+      .user-img {
+        border: 3px white solid;
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+        margin-bottom: 20%;
+
+        img {
+          height: 100%;
+          width: auto;
+        }
+      }
+      p {
+        font-weight: 300;
+        color: $highlightedBlue;
+        margin-bottom: 2%;
+      }
+
+      h2 {
+        font-weight: 200;
+        font-size: 40px;
+      }
+    }
+    .user-card-list {
+      padding-top: 12%;
+      padding-left: 15%;
+      list-style: none;
+
+      button {
+        background: none;
+        border: none;
+        font-style: "Rubik", sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        color: $textBlue;
+        margin-bottom: 10%;
+      }
+
+      button:hover {
+        cursor: pointer;
+        color: white;
+      }
+    }
+  }
+
+  /* Cards */
+
+  .work-card-plate {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+
+  .work-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15%;
+
+    p {
+      color: white;
+    }
+  }
+
+  .work-card-plate,
+  .play-card-plate,
+  .study-card-plate,
+  .social-card-plate,
+  .selcare-card-plate {
+    border-radius: 2vh 2vh 3vh 3vh;
+    background-repeat: no-repeat;
+    background-position: top -6% right 10%;
+    padding-top: 20%;
+
+    h1 {
+      font-size: 50px;
+      font-weight: 300;
+      margin-bottom: 10%;
+    }
+
+    p {
+      color: $textBlue;
+    }
+  }
+
+  .work-card-plate {
+    background-color: $workRed;
+    background-image: url(../images/icon-work.svg);
+
+    .work-card-text {
+      height: 190px;
+      padding: 10%;
+      border-radius: 2vh 2vh 2vh 2vh;
+      background-color: $cardBlue;
+    }
+
+    .highlight:hover {
+      background-color: lighten($cardBlue, 10%);
+      cursor: pointer;
+    }
+  }
+
+  .play-card-plate {
+    background-color: $playBlue;
+    background-image: url(../images/icon-play.svg);
+
+    .play-card-text {
+      height: 190px;
+      padding: 10%;
+      border-radius: 2vh 2vh 2vh 2vh;
+      background-color: $cardBlue;
+    }
+
+    .highlight:hover {
+      background-color: lighten($cardBlue, 10%);
+      cursor: pointer;
+    }
+  }
+
+  .study-card-plate {
+    background-color: $studyRed;
+    background-image: url(../images/icon-study.svg);
+
+    .study-card-text {
+      height: 190px;
+      padding: 10%;
+      border-radius: 2vh 2vh 2vh 2vh;
+      background-color: $cardBlue;
+    }
+
+    .highlight:hover {
+      background-color: lighten($cardBlue, 10%);
+      cursor: pointer;
+    }
+  }
+
+  .exercise-card-plate {
+    background-color: $exerciseGreen;
+    background-image: url(../images/icon-exercise.svg);
+    border-radius: 2vh 2vh 3vh 3vh;
+    background-repeat: no-repeat;
+    background-position: top -1% right 10%;
+    padding-top: 20%;
+
+    h1 {
+      font-size: 50px;
+      font-weight: 300;
+      margin-bottom: 10%;
+    }
+
+    p {
+      color: $textBlue;
+    }
+
+    .exercise-card-text {
+      height: 190px;
+      padding: 10%;
+      border-radius: 2vh 2vh 2vh 2vh;
+      background-color: $cardBlue;
+    }
+
+    .highlight:hover {
+      background-color: lighten($cardBlue, 10%);
+      cursor: pointer;
+    }
+  }
+
+  .social-card-plate {
+    background-color: $socialViolet;
+    background-image: url(../images/icon-social.svg);
+
+    .social-card-text {
+      height: 190px;
+      padding: 10%;
+      border-radius: 2vh 2vh 2vh 2vh;
+      background-color: $cardBlue;
+    }
+
+    .highlight:hover {
+      background-color: lighten($cardBlue, 10%);
+      cursor: pointer;
+    }
+  }
+
+  .selcare-card-plate {
+    background-color: $selfCareOrange;
+    background-image: url(../images/icon-self-care.svg);
+
+    .selcare-card-text {
+      height: 190px;
+      padding: 10%;
+      border-radius: 2vh 2vh 2vh 2vh;
+      background-color: $cardBlue;
+    }
+
+    .highlight:hover {
+      background-color: lighten($cardBlue, 10%);
+      cursor: pointer;
+    }
+  }
+}
