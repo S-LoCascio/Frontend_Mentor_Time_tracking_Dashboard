@@ -87,6 +87,9 @@ body {
   color: hsl(235, 45%, 61%);
   margin-bottom: 10%;
 }
+.card-grid .user-card .user-card-list .highlight {
+  color: white;
+}
 .card-grid .user-card .user-card-list button:hover {
   cursor: pointer;
   color: white;
