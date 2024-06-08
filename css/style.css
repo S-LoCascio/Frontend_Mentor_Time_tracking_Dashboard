@@ -131,7 +131,14 @@ body {
 .card-grid .study-card-plate p,
 .card-grid .social-card-plate p,
 .card-grid .selcare-card-plate p {
-  color: hsl(235, 45%, 61%);
+  color: white;
+}
+.card-grid .work-card-plate .last-week,
+.card-grid .play-card-plate .last-week,
+.card-grid .study-card-plate .last-week,
+.card-grid .social-card-plate .last-week,
+.card-grid .selcare-card-plate .last-week {
+  color: hsl(236, 100%, 87%);
 }
 .card-grid .work-card-plate {
   background-color: hsl(15, 100%, 70%);
@@ -189,7 +196,10 @@ body {
   margin-bottom: 10%;
 }
 .card-grid .exercise-card-plate p {
-  color: hsl(235, 45%, 61%);
+  color: white;
+}
+.card-grid .exercise-card-plate .last-week {
+  color: hsl(236, 100%, 87%);
 }
 .card-grid .exercise-card-plate .exercise-card-text {
   height: 190px;

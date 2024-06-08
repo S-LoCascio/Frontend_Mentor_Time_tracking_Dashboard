@@ -152,7 +152,11 @@ body {
     }
 
     p {
-      color: $textBlue;
+      color: white;
+    }
+
+    .last-week {
+      color: $highlightedBlue;
     }
   }
 
@@ -222,7 +226,11 @@ body {
     }
 
     p {
-      color: $textBlue;
+      color: white;
+    }
+
+    .last-week {
+      color: $highlightedBlue;
     }
 
     .exercise-card-text {
